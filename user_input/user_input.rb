@@ -1,3 +1,5 @@
+require 'pry'
+
 # Write a program that asks the user to type something in, after which your program should simpy
 # display what was entered.
 puts "Type anything you want: "
@@ -82,23 +84,32 @@ puts 'welcome!'
 # Write a program that obtains two integers from the user, then prints the results of dividing the
 # first by the second.  The second number must not be 0 and both numbers should be validated using 
 # this method.
+denominator = 0
+numberator = 0
 
 def valid_number?(number_string)
   number_string.to_i.to_s == number_string
 end
 
+
 loop do
   puts "Please enter the numberator: "
-  numberator = gets.chomp.to_i
+  numberator = gets.chomp
+  break if valid_number?(numberator)
+  puts "Invalid input. Only integers are allowed."
+end
+
+loop do
   puts "Please enter the denominator:"
-  denominator = gets.chomp.to_i
-  
-  if valid_number?(numberator) || valid_number?(denominator)
-    break if denominator == 0
+  denominator = gets.chomp
+
+  if denominator.to_i == 0
+    puts "Invalid input.  A denominator of 0 is not allowed."
   else
-    puts "Invalid input. Only integers are allowed."
-    next
+    break if valid_number?(denominator)
+    puts "Invalid input.  Only intergers are allowed."
   end
 end
 
-  puts numberator / denominator 
+result = numberator.to_i / denominator.to_i 
+puts "#{numberator} / #{denominator} is #{result}"
