@@ -1,1 +1,4 @@
-integer::between?
+integer#between?
+array#push
+array#pop
+array#shift
