@@ -1,5 +1,10 @@
 integer#between?
+integer#times - always returns the number entered 4.times do |something| returns 4
 array#push
 array#pop
 array#shift
 array#sample
+
+conditionals - if else statements
+modifiers - conditionals added to the end of a statement.  ex.) puts 'hi' if man == 'nice'
+
