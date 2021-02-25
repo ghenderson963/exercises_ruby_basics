@@ -2,3 +2,4 @@ integer#between?
 array#push
 array#pop
 array#shift
+array#sample

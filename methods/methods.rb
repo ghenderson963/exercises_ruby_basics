@@ -93,3 +93,19 @@ puts add(5,4) == 9
 
 puts multiply(add(2,2), add(5,4)) == 36 
 
+names = ['Dave', 'Sally', 'George', 'Jessica']
+activities = ['walking','running','cycling']
+
+def name(names)
+  names.sample
+end
+
+def activity(activities)
+  activities.sample
+end
+
+def sentence(name,activity)
+  "#{name} went #{activity} today!"
+end
+
+puts sentence(name(names), activity(activities))
