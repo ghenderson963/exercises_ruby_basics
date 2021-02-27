@@ -56,3 +56,48 @@ else
   puts 'Stop!'
 end
 
+# Write an if statement that returns "Be productive!" if status equals 'awake' and returns "Go to 
+# sleep!" otherwise.  Then assign the return value of the if statement to a variable and print
+# that variable.
+
+status = ['awake', 'tired'].sample
+
+statement = if status == 'awake'
+              "Be Productive!"
+            else
+              "Go to sleep"
+            end
+
+puts statement
+
+# Fix the code so that "Other numbers are cool too!" gets a chance to be executed.
+number = rand(10)
+
+if number == 5
+  puts '5 is a cool number!'
+else
+  puts 'Other numbers are cool too!'
+end
+
+# Reformat the case statement so that it only takes up 5 lines
+
+stoplight = ['green', 'yellow', 'red'].sample
+
+case stoplight
+when 'green'
+  puts 'Go!'
+when 'yellow'
+  puts 'Slow down!'
+else
+  puts 'Stop!'
+end
+
+puts 'Go!' if stoplight == 'green'
+puts 'Slow down!' if stoplight == 'yellow'
+puts 'Stop!' if stoplight == 'red'
+
+case stoplight
+when 'green'  then puts 'Go!'
+when 'yellow' then puts 'Slow down!'
+else               puts 'Stop!'
+end
