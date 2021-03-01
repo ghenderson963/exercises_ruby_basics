@@ -4,7 +4,18 @@ array#push
 array#pop
 array#shift
 array#sample
+string#casecmp returns 0 if the 2 things compared are equal
+string#gsub
+string#split
+string#chars
+string#include?
 
 conditionals - if else statements
 modifiers - conditionals added to the end of a statement.  ex.) puts 'hi' if man == 'nice'
+
+# Given the following code use Array#each to print the plural of each word in words
+words = 'car human elephant airplane'
+words.split.each do |word|
+  puts word + 's'
+end 
 
