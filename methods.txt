@@ -15,6 +15,8 @@ array#map
 array#select
 array#flatten
 
+hash#delete
+
 
 conditionals - if else statements
 modifiers - conditionals added to the end of a statement.  ex.) puts 'hi' if man == 'nice'
