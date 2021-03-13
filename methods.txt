@@ -1,9 +1,13 @@
 integer#between?
 integer#times - always returns the number entered 4.times do |something| returns 4
+integer#even?
+integer#odd?
+
 array#push
 array#pop
 array#shift
 array#sample
+
 string#casecmp returns 0 if the 2 things compared are equal
 string#gsub
 string#split
